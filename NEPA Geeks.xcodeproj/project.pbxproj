@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BF3331B1E216C60003BE0BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF3331A1E216C60003BE0BA /* main.m */; };
+		2BF3331E1E216C60003BE0BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF3331D1E216C60003BE0BA /* AppDelegate.m */; };
+		2BF333241E216C60003BE0BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF333221E216C60003BE0BA /* Main.storyboard */; };
+		2BF333261E216C60003BE0BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BF333251E216C60003BE0BA /* Assets.xcassets */; };
+		2BF333291E216C60003BE0BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF333271E216C60003BE0BA /* LaunchScreen.storyboard */; };
+		2BF333341E216C61003BE0BA /* NEPA_GeeksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF333331E216C61003BE0BA /* NEPA_GeeksTests.m */; };
+		2BF3333F1E216C61003BE0BA /* NEPA_GeeksUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF3333E1E216C61003BE0BA /* NEPA_GeeksUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2BF333301E216C61003BE0BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BF3330E1E216C5F003BE0BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BF333151E216C5F003BE0BA;
+			remoteInfo = "NEPA Geeks";
+		};
+		2BF3333B1E216C61003BE0BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BF3330E1E216C5F003BE0BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BF333151E216C5F003BE0BA;
+			remoteInfo = "NEPA Geeks";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2BF333161E216C60003BE0BA /* NEPA Geeks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NEPA Geeks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BF3331A1E216C60003BE0BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2BF3331C1E216C60003BE0BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2BF3331D1E216C60003BE0BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2BF333231E216C60003BE0BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2BF333251E216C60003BE0BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2BF333281E216C60003BE0BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2BF3332A1E216C60003BE0BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BF3332F1E216C61003BE0BA /* NEPA GeeksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NEPA GeeksTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BF333331E216C61003BE0BA /* NEPA_GeeksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NEPA_GeeksTests.m; sourceTree = "<group>"; };
+		2BF333351E216C61003BE0BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BF3333A1E216C61003BE0BA /* NEPA GeeksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NEPA GeeksUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BF3333E1E216C61003BE0BA /* NEPA_GeeksUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NEPA_GeeksUITests.m; sourceTree = "<group>"; };
+		2BF333401E216C61003BE0BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BF333131E216C5F003BE0BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF3332C1E216C61003BE0BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF333371E216C61003BE0BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BF3330D1E216C5F003BE0BA = {
+			isa = PBXGroup;
+			children = (
+				2BF333181E216C60003BE0BA /* NEPA Geeks */,
+				2BF333321E216C61003BE0BA /* NEPA GeeksTests */,
+				2BF3333D1E216C61003BE0BA /* NEPA GeeksUITests */,
+				2BF333171E216C60003BE0BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2BF333171E216C60003BE0BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BF333161E216C60003BE0BA /* NEPA Geeks.app */,
+				2BF3332F1E216C61003BE0BA /* NEPA GeeksTests.xctest */,
+				2BF3333A1E216C61003BE0BA /* NEPA GeeksUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BF333181E216C60003BE0BA /* NEPA Geeks */ = {
+			isa = PBXGroup;
+			children = (
+				2BF3334C1E216D1C003BE0BA /* Assets */,
+				2BF3334D1E216D27003BE0BA /* Storyboards */,
+				2BF333191E216C60003BE0BA /* Supporting Files */,
+			);
+			path = "NEPA Geeks";
+			sourceTree = "<group>";
+		};
+		2BF333191E216C60003BE0BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BF3331C1E216C60003BE0BA /* AppDelegate.h */,
+				2BF3331D1E216C60003BE0BA /* AppDelegate.m */,
+				2BF3331A1E216C60003BE0BA /* main.m */,
+				2BF3332A1E216C60003BE0BA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2BF333321E216C61003BE0BA /* NEPA GeeksTests */ = {
+			isa = PBXGroup;
+			children = (
+				2BF333331E216C61003BE0BA /* NEPA_GeeksTests.m */,
+				2BF333351E216C61003BE0BA /* Info.plist */,
+			);
+			path = "NEPA GeeksTests";
+			sourceTree = "<group>";
+		};
+		2BF3333D1E216C61003BE0BA /* NEPA GeeksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2BF3333E1E216C61003BE0BA /* NEPA_GeeksUITests.m */,
+				2BF333401E216C61003BE0BA /* Info.plist */,
+			);
+			path = "NEPA GeeksUITests";
+			sourceTree = "<group>";
+		};
+		2BF3334C1E216D1C003BE0BA /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2BF333251E216C60003BE0BA /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		2BF3334D1E216D27003BE0BA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2BF333221E216C60003BE0BA /* Main.storyboard */,
+				2BF333271E216C60003BE0BA /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BF333151E216C5F003BE0BA /* NEPA Geeks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BF333431E216C61003BE0BA /* Build configuration list for PBXNativeTarget "NEPA Geeks" */;
+			buildPhases = (
+				2BF333121E216C5F003BE0BA /* Sources */,
+				2BF333131E216C5F003BE0BA /* Frameworks */,
+				2BF333141E216C5F003BE0BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NEPA Geeks";
+			productName = "NEPA Geeks";
+			productReference = 2BF333161E216C60003BE0BA /* NEPA Geeks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2BF3332E1E216C61003BE0BA /* NEPA GeeksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BF333461E216C61003BE0BA /* Build configuration list for PBXNativeTarget "NEPA GeeksTests" */;
+			buildPhases = (
+				2BF3332B1E216C61003BE0BA /* Sources */,
+				2BF3332C1E216C61003BE0BA /* Frameworks */,
+				2BF3332D1E216C61003BE0BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BF333311E216C61003BE0BA /* PBXTargetDependency */,
+			);
+			name = "NEPA GeeksTests";
+			productName = "NEPA GeeksTests";
+			productReference = 2BF3332F1E216C61003BE0BA /* NEPA GeeksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2BF333391E216C61003BE0BA /* NEPA GeeksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BF333491E216C61003BE0BA /* Build configuration list for PBXNativeTarget "NEPA GeeksUITests" */;
+			buildPhases = (
+				2BF333361E216C61003BE0BA /* Sources */,
+				2BF333371E216C61003BE0BA /* Frameworks */,
+				2BF333381E216C61003BE0BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BF3333C1E216C61003BE0BA /* PBXTargetDependency */,
+			);
+			name = "NEPA GeeksUITests";
+			productName = "NEPA GeeksUITests";
+			productReference = 2BF3333A1E216C61003BE0BA /* NEPA GeeksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BF3330E1E216C5F003BE0BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Rappid Development LLC";
+				TargetAttributes = {
+					2BF333151E216C5F003BE0BA = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					2BF3332E1E216C61003BE0BA = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2BF333151E216C5F003BE0BA;
+					};
+					2BF333391E216C61003BE0BA = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2BF333151E216C5F003BE0BA;
+					};
+				};
+			};
+			buildConfigurationList = 2BF333111E216C5F003BE0BA /* Build configuration list for PBXProject "NEPA Geeks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2BF3330D1E216C5F003BE0BA;
+			productRefGroup = 2BF333171E216C60003BE0BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BF333151E216C5F003BE0BA /* NEPA Geeks */,
+				2BF3332E1E216C61003BE0BA /* NEPA GeeksTests */,
+				2BF333391E216C61003BE0BA /* NEPA GeeksUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BF333141E216C5F003BE0BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF333291E216C60003BE0BA /* LaunchScreen.storyboard in Resources */,
+				2BF333261E216C60003BE0BA /* Assets.xcassets in Resources */,
+				2BF333241E216C60003BE0BA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF3332D1E216C61003BE0BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF333381E216C61003BE0BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BF333121E216C5F003BE0BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF3331E1E216C60003BE0BA /* AppDelegate.m in Sources */,
+				2BF3331B1E216C60003BE0BA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF3332B1E216C61003BE0BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF333341E216C61003BE0BA /* NEPA_GeeksTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF333361E216C61003BE0BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF3333F1E216C61003BE0BA /* NEPA_GeeksUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2BF333311E216C61003BE0BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BF333151E216C5F003BE0BA /* NEPA Geeks */;
+			targetProxy = 2BF333301E216C61003BE0BA /* PBXContainerItemProxy */;
+		};
+		2BF3333C1E216C61003BE0BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BF333151E216C5F003BE0BA /* NEPA Geeks */;
+			targetProxy = 2BF3333B1E216C61003BE0BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2BF333221E216C60003BE0BA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BF333231E216C60003BE0BA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2BF333271E216C60003BE0BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BF333281E216C60003BE0BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2BF333411E216C61003BE0BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2BF333421E216C61003BE0BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BF333441E216C61003BE0BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "NEPA Geeks/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rappiddevelopment.NEPA-Geeks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2BF333451E216C61003BE0BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "NEPA Geeks/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rappiddevelopment.NEPA-Geeks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2BF333471E216C61003BE0BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "NEPA GeeksTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rappiddevelopment.NEPA-GeeksTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NEPA Geeks.app/NEPA Geeks";
+			};
+			name = Debug;
+		};
+		2BF333481E216C61003BE0BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "NEPA GeeksTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rappiddevelopment.NEPA-GeeksTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NEPA Geeks.app/NEPA Geeks";
+			};
+			name = Release;
+		};
+		2BF3334A1E216C61003BE0BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "NEPA GeeksUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rappiddevelopment.NEPA-GeeksUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "NEPA Geeks";
+			};
+			name = Debug;
+		};
+		2BF3334B1E216C61003BE0BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "NEPA GeeksUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rappiddevelopment.NEPA-GeeksUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "NEPA Geeks";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BF333111E216C5F003BE0BA /* Build configuration list for PBXProject "NEPA Geeks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BF333411E216C61003BE0BA /* Debug */,
+				2BF333421E216C61003BE0BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BF333431E216C61003BE0BA /* Build configuration list for PBXNativeTarget "NEPA Geeks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BF333441E216C61003BE0BA /* Debug */,
+				2BF333451E216C61003BE0BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2BF333461E216C61003BE0BA /* Build configuration list for PBXNativeTarget "NEPA GeeksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BF333471E216C61003BE0BA /* Debug */,
+				2BF333481E216C61003BE0BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2BF333491E216C61003BE0BA /* Build configuration list for PBXNativeTarget "NEPA GeeksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BF3334A1E216C61003BE0BA /* Debug */,
+				2BF3334B1E216C61003BE0BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BF3330E1E216C5F003BE0BA /* Project object */;
+}
