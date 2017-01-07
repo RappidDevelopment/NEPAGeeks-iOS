@@ -8,6 +8,11 @@
 
 #import "NEPAGeeksUINavigationController.h"
 
+/**
+ A subclass of UINavigationController. This is used for all instances
+ of UINavigationController within the app and ensures a consistent
+ style throughout.
+ */
 @interface NEPAGeeksUINavigationController ()
 
 @end
