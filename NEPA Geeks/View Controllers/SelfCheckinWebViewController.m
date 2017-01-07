@@ -48,6 +48,12 @@ NSString * const SELF_CHECKIN_URL = @"https://nepageeks.repairshopr.com/wf/table
  */
 - (void)stopActivityIndicator;
 
+/**
+ Alerts the user an error was encountered.
+ This resets the webview on dismissal.
+ */
+- (void)showErrorAlert;
+
 @end
 
 @implementation SelfCheckinWebViewController
@@ -84,6 +90,23 @@ NSString * const SELF_CHECKIN_URL = @"https://nepageeks.repairshopr.com/wf/table
     // Always hide the activity indicator when a page is finished loading.
     [self stopActivityIndicator];
 }
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+    // Hide the activity indicator if an error is encountered.
+    [self stopActivityIndicator];
+    // Alert the user of the error and give them an option to reset the webview.
+    [self showErrorAlert];
+}
+- (void)showErrorAlert {
+    UIAlertController *errorAlertController = [UIAlertController alertControllerWithTitle:@"Error"
+                                                                                    message:@"There was an error making your request. Please wait a few moments and try again."
+                                                                             preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"Try Again" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {[self resetWebView];}];
+    [errorAlertController addAction:defaultAction];
+    [self presentViewController:errorAlertController animated:YES completion:nil];
+}
+
 #pragma mark - Private Methods 
 
 - (void)resetWebView {
