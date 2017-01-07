@@ -15,5 +15,13 @@
 @interface RequestParser : NSObject
 
 
+/**
+ Checks if the given request is to the 
+ self-checkin success/thank you page.
+
+ @param request the request to be checked
+ @return YES if request is to self-checkin page, NO otherwise.
+ */
++ (BOOL)requestIsToSelfCheckinSuccessPage:(NSURLRequest *)request;
 
 @end
