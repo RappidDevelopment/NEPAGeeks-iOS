@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ The view controller for the self-checkin page.
+ */
 @interface SelfCheckinWebViewController : UIViewController
 
 @end
