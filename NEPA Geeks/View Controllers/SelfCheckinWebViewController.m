@@ -7,6 +7,7 @@
 //
 
 #import "SelfCheckinWebViewController.h"
+#import "RequestParser.h"
 
 /**
  The URL for the self-checkin form.
@@ -49,6 +50,12 @@ NSString * const SELF_CHECKIN_URL = @"https://nepageeks.repairshopr.com/wf/table
 - (void)stopActivityIndicator;
 
 /**
+ Alerts the user the self-checkin was successful.
+ This resets the webview on dismissal.
+ */
+- (void)showSuccessAlert;
+
+/**
  Alerts the user an error was encountered.
  This resets the webview on dismissal.
  */
@@ -79,8 +86,21 @@ NSString * const SELF_CHECKIN_URL = @"https://nepageeks.repairshopr.com/wf/table
 #pragma mark - UIWebViewDelegate
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    
+    // If the user reaches the self-checkin success page...
+    if ([RequestParser requestIsToSelfCheckinSuccessPage:request]) {
+        
+        // Show our own, native success alert, which will reset the webview on dismissal.
+        [self showSuccessAlert];
+        
+        // And don't load the webview content.
+        return NO;
+    }
+    
+    // Otherwise, always load what's in the webview.
     return YES;
 }
+
 - (void)webViewDidStartLoad:(UIWebView *)webView {
     // Always show the activity indicator when a begins page is loading.
     [self startActivityIndicator];
@@ -97,6 +117,19 @@ NSString * const SELF_CHECKIN_URL = @"https://nepageeks.repairshopr.com/wf/table
     // Alert the user of the error and give them an option to reset the webview.
     [self showErrorAlert];
 }
+
+#pragma mark - UIAlertController
+
+- (void)showSuccessAlert {
+    UIAlertController *successAlertController = [UIAlertController alertControllerWithTitle:@"Thank You"
+                                                                  message:@"Thank you for choosing NEPA Geeks for your computer repair."
+                                                           preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"Dismiss" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {[self resetWebView];}];
+    [successAlertController addAction:defaultAction];
+    [self presentViewController:successAlertController animated:YES completion:nil];
+}
+
 - (void)showErrorAlert {
     UIAlertController *errorAlertController = [UIAlertController alertControllerWithTitle:@"Error"
                                                                                     message:@"There was an error making your request. Please wait a few moments and try again."
