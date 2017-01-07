@@ -47,10 +47,10 @@
             </objects>
             <point key="canvasLocation" x="878" y="1006"/>
         </scene>
-        <!--View Controller-->
+        <!--Self Checkin Web View Controller-->
         <scene sceneID="vbY-dk-qmI">
             <objects>
-                <viewController id="M2a-kB-808" sceneMemberID="viewController">
+                <viewController id="M2a-kB-808" customClass="SelfCheckinWebViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ShL-hT-oqK"/>
                         <viewControllerLayoutGuide type="bottom" id="OQe-uS-JtC"/>
@@ -85,11 +85,11 @@
             </objects>
             <point key="canvasLocation" x="-140" y="-108"/>
         </scene>
-        <!--Item 1-->
+        <!--Self Check-In-->
         <scene sceneID="HWn-By-Xtf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PWJ-8n-f4L" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="POM-kO-vVj"/>
+                    <tabBarItem key="tabBarItem" title="Self Check-In" id="POM-kO-vVj"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ycg-Vf-Pmy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
