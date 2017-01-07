@@ -16,6 +16,7 @@
 		2BF3333F1E216C61003BE0BA /* NEPA_GeeksUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF3333E1E216C61003BE0BA /* NEPA_GeeksUITests.m */; };
 		2BF333511E21719F003BE0BA /* SelfCheckinWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF333501E21719F003BE0BA /* SelfCheckinWebViewController.m */; };
 		2BF333541E217558003BE0BA /* NEPAGeeksUINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF333531E217558003BE0BA /* NEPAGeeksUINavigationController.m */; };
+		2BF3335C1E219431003BE0BA /* RequestParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF3335B1E219431003BE0BA /* RequestParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		2BF333501E21719F003BE0BA /* SelfCheckinWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelfCheckinWebViewController.m; path = "View Controllers/SelfCheckinWebViewController.m"; sourceTree = "<group>"; };
 		2BF333521E217558003BE0BA /* NEPAGeeksUINavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NEPAGeeksUINavigationController.h; path = "View Controllers/NEPAGeeksUINavigationController.h"; sourceTree = "<group>"; };
 		2BF333531E217558003BE0BA /* NEPAGeeksUINavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NEPAGeeksUINavigationController.m; path = "View Controllers/NEPAGeeksUINavigationController.m"; sourceTree = "<group>"; };
+		2BF3335A1E219431003BE0BA /* RequestParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RequestParser.h; path = Models/RequestParser.h; sourceTree = "<group>"; };
+		2BF3335B1E219431003BE0BA /* RequestParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RequestParser.m; path = Models/RequestParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,9 +107,10 @@
 		2BF333181E216C60003BE0BA /* NEPA Geeks */ = {
 			isa = PBXGroup;
 			children = (
-				2BF3334E1E217161003BE0BA /* View Controllers */,
 				2BF3334C1E216D1C003BE0BA /* Assets */,
+				2BF333561E2193E6003BE0BA /* Models */,
 				2BF3334D1E216D27003BE0BA /* Storyboards */,
+				2BF3334E1E217161003BE0BA /* View Controllers */,
 				2BF333191E216C60003BE0BA /* Supporting Files */,
 			);
 			path = "NEPA Geeks";
@@ -175,6 +179,15 @@
 				2BF333531E217558003BE0BA /* NEPAGeeksUINavigationController.m */,
 			);
 			name = Subclasses;
+			sourceTree = "<group>";
+		};
+		2BF333561E2193E6003BE0BA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2BF3335A1E219431003BE0BA /* RequestParser.h */,
+				2BF3335B1E219431003BE0BA /* RequestParser.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +326,7 @@
 				2BF3331E1E216C60003BE0BA /* AppDelegate.m in Sources */,
 				2BF3331B1E216C60003BE0BA /* main.m in Sources */,
 				2BF333511E21719F003BE0BA /* SelfCheckinWebViewController.m in Sources */,
+				2BF3335C1E219431003BE0BA /* RequestParser.m in Sources */,
 				2BF333541E217558003BE0BA /* NEPAGeeksUINavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
