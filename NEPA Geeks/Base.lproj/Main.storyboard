@@ -58,9 +58,34 @@
                     <view key="view" contentMode="scaleToFill" id="Zo6-gj-P8m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9JV-h9-nj0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="M2a-kB-808" id="afk-eZ-Tuj"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="8Uh-om-gWH">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9JV-h9-nj0" secondAttribute="trailing" id="Lfu-QS-v8p"/>
+                            <constraint firstItem="8Uh-om-gWH" firstAttribute="centerX" secondItem="Zo6-gj-P8m" secondAttribute="centerX" id="agP-hv-HsY"/>
+                            <constraint firstItem="9JV-h9-nj0" firstAttribute="top" secondItem="Zo6-gj-P8m" secondAttribute="top" id="cY9-4D-XNG"/>
+                            <constraint firstItem="9JV-h9-nj0" firstAttribute="leading" secondItem="Zo6-gj-P8m" secondAttribute="leading" id="dLu-8h-All"/>
+                            <constraint firstAttribute="bottom" secondItem="9JV-h9-nj0" secondAttribute="bottom" id="mPy-6f-qZn"/>
+                            <constraint firstItem="8Uh-om-gWH" firstAttribute="centerY" secondItem="Zo6-gj-P8m" secondAttribute="centerY" id="sGO-un-Pf6"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oZe-py-Imi"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="8Uh-om-gWH" id="Dfa-Ob-eVP"/>
+                        <outlet property="selfCheckinWebView" destination="9JV-h9-nj0" id="irI-PP-TMV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AIK-Gw-yX4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
