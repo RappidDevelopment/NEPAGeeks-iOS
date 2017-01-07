@@ -16,9 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // TODO: Move to a subclass of UINavigationController
-    self.navigationItem.title = @"NEPA Geeks";
 }
 
 @end

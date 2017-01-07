@@ -88,7 +88,7 @@
         <!--Self Check-In-->
         <scene sceneID="HWn-By-Xtf">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PWJ-8n-f4L" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PWJ-8n-f4L" customClass="NEPAGeeksUINavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Self Check-In" id="POM-kO-vVj"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ycg-Vf-Pmy">
