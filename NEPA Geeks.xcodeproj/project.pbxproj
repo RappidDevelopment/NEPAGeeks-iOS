@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2BD5AB3F1E2AF39900A9C6F3 /* AppointmentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5AB3E1E2AF39900A9C6F3 /* AppointmentTableViewController.m */; };
 		2BD5AB431E2AF42B00A9C6F3 /* AppointmentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5AB421E2AF42B00A9C6F3 /* AppointmentTableViewCell.m */; };
+		2BD5AB461E2AF63100A9C6F3 /* AppointmentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5AB451E2AF63100A9C6F3 /* AppointmentType.m */; };
 		2BF3331B1E216C60003BE0BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF3331A1E216C60003BE0BA /* main.m */; };
 		2BF3331E1E216C60003BE0BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF3331D1E216C60003BE0BA /* AppDelegate.m */; };
 		2BF333241E216C60003BE0BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF333221E216C60003BE0BA /* Main.storyboard */; };
@@ -43,6 +44,8 @@
 		2BD5AB3E1E2AF39900A9C6F3 /* AppointmentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppointmentTableViewController.m; path = "View Controllers/AppointmentTableViewController.m"; sourceTree = "<group>"; };
 		2BD5AB411E2AF42B00A9C6F3 /* AppointmentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppointmentTableViewCell.h; path = UITableViewCells/AppointmentTableViewCell.h; sourceTree = "<group>"; };
 		2BD5AB421E2AF42B00A9C6F3 /* AppointmentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppointmentTableViewCell.m; path = UITableViewCells/AppointmentTableViewCell.m; sourceTree = "<group>"; };
+		2BD5AB441E2AF63100A9C6F3 /* AppointmentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppointmentType.h; sourceTree = "<group>"; };
+		2BD5AB451E2AF63100A9C6F3 /* AppointmentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppointmentType.m; sourceTree = "<group>"; };
 		2BF333161E216C60003BE0BA /* NEPA Geeks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NEPA Geeks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BF3331A1E216C60003BE0BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2BF3331C1E216C60003BE0BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -204,6 +207,8 @@
 			children = (
 				2BF3335A1E219431003BE0BA /* RequestParser.h */,
 				2BF3335B1E219431003BE0BA /* RequestParser.m */,
+				2BD5AB441E2AF63100A9C6F3 /* AppointmentType.h */,
+				2BD5AB451E2AF63100A9C6F3 /* AppointmentType.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -346,6 +351,7 @@
 				2BF3331B1E216C60003BE0BA /* main.m in Sources */,
 				2BF333511E21719F003BE0BA /* SelfCheckinWebViewController.m in Sources */,
 				2BF3335C1E219431003BE0BA /* RequestParser.m in Sources */,
+				2BD5AB461E2AF63100A9C6F3 /* AppointmentType.m in Sources */,
 				2BD5AB3F1E2AF39900A9C6F3 /* AppointmentTableViewController.m in Sources */,
 				2BF333541E217558003BE0BA /* NEPAGeeksUINavigationController.m in Sources */,
 			);
