@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,13 +21,59 @@
                     <view key="view" contentMode="scaleToFill" id="4VA-3K-3ZK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="72" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7jg-9b-PdM">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AppointmentCell" rowHeight="72" id="TDi-XP-UpC" customClass="AppointmentTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="72"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TDi-XP-UpC" id="gmq-fv-lV8">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="71"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5G-M3-OPT">
+                                                    <rect key="frame" x="20" y="20" width="314" height="31.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Q5G-M3-OPT" firstAttribute="trailing" secondItem="gmq-fv-lV8" secondAttribute="trailingMargin" id="436-CR-8Yx"/>
+                                                <constraint firstItem="Q5G-M3-OPT" firstAttribute="leading" secondItem="gmq-fv-lV8" secondAttribute="leading" constant="20" symbolic="YES" id="4IP-5H-AK8"/>
+                                                <constraint firstItem="Q5G-M3-OPT" firstAttribute="top" secondItem="gmq-fv-lV8" secondAttribute="top" constant="20" symbolic="YES" id="NZf-4F-hUx"/>
+                                                <constraint firstAttribute="bottom" secondItem="Q5G-M3-OPT" secondAttribute="bottom" constant="20" symbolic="YES" id="wsR-DE-cx1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="appointmentTypeLabel" destination="Q5G-M3-OPT" id="4lR-4v-Gth"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="svL-2y-zTf" id="hMf-5g-RNi"/>
+                                    <outlet property="delegate" destination="svL-2y-zTf" id="fzW-Pg-KKX"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ADp-La-JM0" firstAttribute="top" secondItem="7jg-9b-PdM" secondAttribute="bottom" id="BK9-Nb-8OL"/>
+                            <constraint firstAttribute="trailing" secondItem="7jg-9b-PdM" secondAttribute="trailing" id="BXE-Cd-Jeh"/>
+                            <constraint firstItem="7jg-9b-PdM" firstAttribute="leading" secondItem="4VA-3K-3ZK" secondAttribute="leading" id="HdK-jX-D9F"/>
+                            <constraint firstItem="7jg-9b-PdM" firstAttribute="top" secondItem="41a-bA-F70" secondAttribute="bottom" id="PJ6-EK-3sV"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="z80-qf-6DI"/>
+                    <navigationItem key="navigationItem" id="FD6-2Q-5R9"/>
+                    <connections>
+                        <outlet property="appointmentTableView" destination="7jg-9b-PdM" id="laj-Zc-TWe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aLY-1I-9Ca" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="812" y="219"/>
+            <point key="canvasLocation" x="1751.2" y="218.1409295352324"/>
         </scene>
         <!--Item 3-->
         <scene sceneID="Iaf-0f-lao">
@@ -102,7 +149,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="PWJ-8n-f4L" kind="relationship" relationship="viewControllers" id="ou4-h9-AvR"/>
-                        <segue destination="svL-2y-zTf" kind="relationship" relationship="viewControllers" id="Feh-fy-XsV"/>
+                        <segue destination="6Jg-5t-DSK" kind="relationship" relationship="viewControllers" id="Feh-fy-XsV"/>
                         <segue destination="N4w-12-a3f" kind="relationship" relationship="viewControllers" id="94l-hL-y0U"/>
                     </connections>
                 </tabBarController>
@@ -128,6 +175,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a8U-TG-rrM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="812" y="-436.73163418290858"/>
+        </scene>
+        <!--Appointments-->
+        <scene sceneID="g6t-K7-v7x">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6Jg-5t-DSK" customClass="NEPAGeeksUINavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Appointments" id="z80-qf-6DI"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jx3-Vg-W0d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="svL-2y-zTf" kind="relationship" relationship="rootViewController" id="niF-6x-wNO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oU1-kp-3nH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812" y="218.1409295352324"/>
         </scene>
     </scenes>
 </document>
