@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-
 /**
  Parses various NSURLRequests
  */
@@ -23,5 +22,14 @@
  @return YES if request is to self-checkin page, NO otherwise.
  */
 + (BOOL)requestIsToSelfCheckinSuccessPage:(NSURLRequest *)request;
+
+/**
+ Checks if the given request is to the
+ appointment success/thank you page.
+ 
+ @param request the request to be checked
+ @return YES if request is to appointment page, NO otherwise.
+ */
++ (BOOL)requestIsToAppointmentSuccessPage:(NSURLRequest *)request;
 
 @end
