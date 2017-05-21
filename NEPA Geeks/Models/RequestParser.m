@@ -14,39 +14,45 @@
 NSString * const NEPA_GEEKS_HOST = @"www.nepageeks.com";
 
 /**
+ The REPAIRSHOPR URL Host.
+ */
+NSString * const REPAIRSHOPR_HOST = @"nepageeks.repairshopr.com";
+
+/**
  The URL path to the self-checkin success/thank you page.
  */
 NSString * const SUCCESS_PAGE_PATH = @"/self-check-in/thank-you";
+
+/**
+ The URL path to the appointment success/thank you page.
+ */
+NSString * const APPOINTMENT_SUCCESS_PAGE_PATH = @"10711";
 
 /**
  Parses various NSURLRequests
  */
 @interface RequestParser()
 
-/**
- Checks if the given request has a
- host of `nepageeks.com`
- 
- @param request the request to be checked
- @return YES if `nepageeks.com` is the request's host, NO otherwise
- */
-+ (BOOL)requestIsToNEPAGeeks:(NSURLRequest *)request;
-
 @end
 
 @implementation RequestParser
 
 + (BOOL)requestIsToSelfCheckinSuccessPage:(NSURLRequest *)request {
-    BOOL isNEPAGeeksHost = [self requestIsToNEPAGeeks:request];
+    NSLog(@"%@", request.URL.absoluteString);
+
+    BOOL isNEPAGeeksHost =  [request.URL.host isEqualToString:NEPA_GEEKS_HOST];
     BOOL isSuccessPagePath = [request.URL.path isEqualToString:SUCCESS_PAGE_PATH];
     
     return (isNEPAGeeksHost && isSuccessPagePath);
 }
 
-
-+ (BOOL)requestIsToNEPAGeeks:(NSURLRequest *)request {
++ (BOOL)requestIsToAppointmentSuccessPage:(NSURLRequest *)request {
+    NSLog(@"%@", request.URL.absoluteString);
+    NSString *lastPathParameter = [request.URL.absoluteString lastPathComponent];
+    BOOL isNEPAGeeksHost = [request.URL.host isEqualToString:REPAIRSHOPR_HOST];
+    BOOL isSuccessPagePath = [lastPathParameter isEqualToString:APPOINTMENT_SUCCESS_PAGE_PATH];
     
-    return [request.URL.host isEqualToString:NEPA_GEEKS_HOST];
+    return (isNEPAGeeksHost && isSuccessPagePath);
 }
 
 @end
