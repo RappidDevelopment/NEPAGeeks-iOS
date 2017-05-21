@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ The view controller for the appointment table view page.
+
+ */
 @interface AppointmentTableViewController : UIViewController
 
 @end

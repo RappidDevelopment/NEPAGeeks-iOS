@@ -10,6 +10,9 @@
 #import "AppointmentTableViewCell.h"
 #import "AppointmentType.h"
 
+/**
+ The view controller for the appointment table view page.
+ */
 @interface AppointmentTableViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *appointmentTableView;
