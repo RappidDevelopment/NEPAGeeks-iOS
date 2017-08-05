@@ -108,6 +108,13 @@ NSString * const APPOINTMENT_URL = @"https://nepageeks.repairshopr.com/wf/drop-o
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
+    if ([[webView stringByEvaluatingJavaScriptFromString:@"document.URL"] containsString:@"10709"]) {
+        NSString *cssString = @"body { margin-top: -50px; }";
+        NSString *javascriptString = @"var style = document.createElement('style'); style.innerHTML = '%@'; document.head.appendChild(style)";
+        NSString *javascriptWithCSSString = [NSString stringWithFormat:javascriptString, cssString];
+        [webView stringByEvaluatingJavaScriptFromString:javascriptWithCSSString];
+        // NSLog(@"URL: %@", [webView stringByEvaluatingJavaScriptFromString:@"document.URL"]);
+    }
     // Always hide the activity indicator when a page is finished loading.
     [self stopActivityIndicator];
     [self displayBackButtonIfNeeded];
