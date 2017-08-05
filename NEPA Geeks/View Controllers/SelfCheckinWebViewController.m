@@ -107,6 +107,11 @@ NSString * const SELF_CHECKIN_URL = @"https://nepageeks.repairshopr.com/wf/table
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
+    NSString *cssString = @"body { margin-top: -50px; }";
+    NSString *javascriptString = @"var style = document.createElement('style'); style.innerHTML = '%@'; document.head.appendChild(style)";
+    NSString *javascriptWithCSSString = [NSString stringWithFormat:javascriptString, cssString];
+    [webView stringByEvaluatingJavaScriptFromString:javascriptWithCSSString];
+    
     // Always hide the activity indicator when a page is finished loading.
     [self stopActivityIndicator];
 }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B2808961F364EC6009AB45D /* ContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2808951F364EC6009AB45D /* ContactUsViewController.m */; };
+		2B2808991F364F0F009AB45D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B2808981F364F0F009AB45D /* MapKit.framework */; };
+		2B92518D1F36426800EA9B0A /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B92518C1F36426800EA9B0A /* OpenSans-Regular.ttf */; };
 		2BB001DD1ED2141400E246E4 /* SF-Quartzite-Extended.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BB001DC1ED2141400E246E4 /* SF-Quartzite-Extended.ttf */; };
 		2BB001E01ED221BD00E246E4 /* AppointmentWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB001DF1ED221BD00E246E4 /* AppointmentWebViewController.m */; };
 		2BD5AB3F1E2AF39900A9C6F3 /* AppointmentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5AB3E1E2AF39900A9C6F3 /* AppointmentTableViewController.m */; };
@@ -42,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B2808941F364EC6009AB45D /* ContactUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactUsViewController.h; path = "View Controllers/ContactUsViewController.h"; sourceTree = "<group>"; };
+		2B2808951F364EC6009AB45D /* ContactUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactUsViewController.m; path = "View Controllers/ContactUsViewController.m"; sourceTree = "<group>"; };
+		2B2808981F364F0F009AB45D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2B92518C1F36426800EA9B0A /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Regular.ttf"; path = "Fonts/OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		2BB001DC1ED2141400E246E4 /* SF-Quartzite-Extended.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Quartzite-Extended.ttf"; path = "Fonts/SF-Quartzite-Extended.ttf"; sourceTree = "<group>"; };
 		2BB001DE1ED221BD00E246E4 /* AppointmentWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppointmentWebViewController.h; path = "View Controllers/AppointmentWebViewController.h"; sourceTree = "<group>"; };
 		2BB001DF1ED221BD00E246E4 /* AppointmentWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppointmentWebViewController.m; path = "View Controllers/AppointmentWebViewController.m"; sourceTree = "<group>"; };
@@ -78,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B2808991F364F0F009AB45D /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,9 +106,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B2808971F364F0F009AB45D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B2808981F364F0F009AB45D /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2BB001D91ED213B100E246E4 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				2B92518C1F36426800EA9B0A /* OpenSans-Regular.ttf */,
 				2BB001DC1ED2141400E246E4 /* SF-Quartzite-Extended.ttf */,
 			);
 			name = Fonts;
@@ -122,6 +139,7 @@
 				2BF333321E216C61003BE0BA /* NEPA GeeksTests */,
 				2BF3333D1E216C61003BE0BA /* NEPA GeeksUITests */,
 				2BF333171E216C60003BE0BA /* Products */,
+				2B2808971F364F0F009AB45D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -205,6 +223,8 @@
 				2BD5AB3E1E2AF39900A9C6F3 /* AppointmentTableViewController.m */,
 				2BB001DE1ED221BD00E246E4 /* AppointmentWebViewController.h */,
 				2BB001DF1ED221BD00E246E4 /* AppointmentWebViewController.m */,
+				2B2808941F364EC6009AB45D /* ContactUsViewController.h */,
+				2B2808951F364EC6009AB45D /* ContactUsViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -296,6 +316,7 @@
 				TargetAttributes = {
 					2BF333151E216C5F003BE0BA = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 847HEBY8WT;
 						ProvisioningStyle = Automatic;
 					};
 					2BF3332E1E216C61003BE0BA = {
@@ -335,6 +356,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B92518D1F36426800EA9B0A /* OpenSans-Regular.ttf in Resources */,
 				2BF333291E216C60003BE0BA /* LaunchScreen.storyboard in Resources */,
 				2BF333261E216C60003BE0BA /* Assets.xcassets in Resources */,
 				2BB001DD1ED2141400E246E4 /* SF-Quartzite-Extended.ttf in Resources */,
@@ -368,6 +390,7 @@
 				2BF3331B1E216C60003BE0BA /* main.m in Sources */,
 				2BF333511E21719F003BE0BA /* SelfCheckinWebViewController.m in Sources */,
 				2BB001E01ED221BD00E246E4 /* AppointmentWebViewController.m in Sources */,
+				2B2808961F364EC6009AB45D /* ContactUsViewController.m in Sources */,
 				2BF3335C1E219431003BE0BA /* RequestParser.m in Sources */,
 				2BD5AB461E2AF63100A9C6F3 /* AppointmentType.m in Sources */,
 				2BD5AB3F1E2AF39900A9C6F3 /* AppointmentTableViewController.m in Sources */,
@@ -520,9 +543,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 847HEBY8WT;
 				INFOPLIST_FILE = "NEPA Geeks/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rappiddevelopment.nepageeks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -533,9 +556,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 847HEBY8WT;
 				INFOPLIST_FILE = "NEPA Geeks/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rappiddevelopment.nepageeks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
