@@ -19,7 +19,6 @@ NSString * const REUSE_IDENTIFIER = @"AppointmentCell";
 @implementation AppointmentTableViewCell
 
 - (void)setAppointmentCellLabelText:(NSString *)labelText {
-    NSLog(@"%@", labelText);
     self.appointmentTypeLabel.text = labelText;
 }
 

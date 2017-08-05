@@ -38,8 +38,6 @@ NSString * const APPOINTMENT_SUCCESS_PAGE_PATH = @"10711";
 @implementation RequestParser
 
 + (BOOL)requestIsToSelfCheckinSuccessPage:(NSURLRequest *)request {
-    NSLog(@"%@", request.URL.absoluteString);
-
     BOOL isNEPAGeeksHost =  [request.URL.host isEqualToString:NEPA_GEEKS_HOST];
     BOOL isSuccessPagePath = [request.URL.path isEqualToString:SUCCESS_PAGE_PATH];
     
@@ -47,7 +45,6 @@ NSString * const APPOINTMENT_SUCCESS_PAGE_PATH = @"10711";
 }
 
 + (BOOL)requestIsToAppointmentSuccessPage:(NSURLRequest *)request {
-    NSLog(@"%@", request.URL.absoluteString);
     NSString *lastPathParameter = [request.URL.absoluteString lastPathComponent];
     BOOL isNEPAGeeksHost = [request.URL.host isEqualToString:REPAIRSHOPR_HOST];
     BOOL isSuccessPagePath = [lastPathParameter isEqualToString:APPOINTMENT_SUCCESS_PAGE_PATH];
