@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B92518D1F36426800EA9B0A /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B92518C1F36426800EA9B0A /* OpenSans-Regular.ttf */; };
 		2BB001DD1ED2141400E246E4 /* SF-Quartzite-Extended.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BB001DC1ED2141400E246E4 /* SF-Quartzite-Extended.ttf */; };
 		2BB001E01ED221BD00E246E4 /* AppointmentWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB001DF1ED221BD00E246E4 /* AppointmentWebViewController.m */; };
 		2BD5AB3F1E2AF39900A9C6F3 /* AppointmentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5AB3E1E2AF39900A9C6F3 /* AppointmentTableViewController.m */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B92518C1F36426800EA9B0A /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Regular.ttf"; path = "Fonts/OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		2BB001DC1ED2141400E246E4 /* SF-Quartzite-Extended.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Quartzite-Extended.ttf"; path = "Fonts/SF-Quartzite-Extended.ttf"; sourceTree = "<group>"; };
 		2BB001DE1ED221BD00E246E4 /* AppointmentWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppointmentWebViewController.h; path = "View Controllers/AppointmentWebViewController.h"; sourceTree = "<group>"; };
 		2BB001DF1ED221BD00E246E4 /* AppointmentWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppointmentWebViewController.m; path = "View Controllers/AppointmentWebViewController.m"; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		2BB001D91ED213B100E246E4 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				2B92518C1F36426800EA9B0A /* OpenSans-Regular.ttf */,
 				2BB001DC1ED2141400E246E4 /* SF-Quartzite-Extended.ttf */,
 			);
 			name = Fonts;
@@ -335,6 +338,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B92518D1F36426800EA9B0A /* OpenSans-Regular.ttf in Resources */,
 				2BF333291E216C60003BE0BA /* LaunchScreen.storyboard in Resources */,
 				2BF333261E216C60003BE0BA /* Assets.xcassets in Resources */,
 				2BB001DD1ED2141400E246E4 /* SF-Quartzite-Extended.ttf in Resources */,
