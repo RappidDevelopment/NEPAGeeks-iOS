@@ -48,7 +48,7 @@
 }
 
 - (void)facebookTapped {
-     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://facebook.com"] options:@{} completionHandler:nil];
+     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.facebook.com/nepageeks/"] options:@{} completionHandler:nil];
 }
 
 - (void)emailTapped {
