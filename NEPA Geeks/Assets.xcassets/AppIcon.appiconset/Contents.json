@@ -101,6 +101,12 @@
       "idiom" : "ipad",
       "filename" : "Icon-1.png",
       "scale" : "2x"
+    },
+    {
+      "size" : "1024x1024",
+      "idiom" : "ios-marketing",
+      "filename" : "MOCK Gradient White.jpg",
+      "scale" : "1x"
     }
   ],
   "info" : {
